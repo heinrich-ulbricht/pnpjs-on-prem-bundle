@@ -1,9 +1,10 @@
 # pnpjs-on-prem-bundle
-Bundle latest PnPjs for usage in SharePoint on-premises.
+Use this project to bundle the latest [PnPjs](https://pnp.github.io/pnpjs/) into a single JavaScript file. Use that in an on-premises SharePoint environment where you have no SharePoint Framework.
 
 ## Use Cases
-* maintenance of light-weight JavaScript solutions in SharePoint on-premises (Script Editor, Content Editor, Add-ins, Master Page customizations etc.)
-* using the latest [PnPjs](https://pnp.github.io/pnpjs/) in SharePoint on-premises (note: **not** the deprecated [PnP-JS-Core](https://github.com/SharePoint/PnP-JS-Core))
+* maintain light-weight JavaScript solutions in SharePoint on-premises (Script Editor, Content Editor, Add-ins, Master Page customizations etc.) while using a modern API wrapper
+* use PnPjs instead of handwoven REST calls to the SharePoint API
+* use the latest [PnPjs](https://pnp.github.io/pnpjs/) in SharePoint on-premises (note: **not** the deprecated [PnP-JS-Core](https://github.com/SharePoint/PnP-JS-Core))
 
 ## Challenges of Internet Explorer 11
 IE 11 needs polyfills for:
