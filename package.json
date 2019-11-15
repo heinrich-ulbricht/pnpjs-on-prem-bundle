@@ -1,0 +1,24 @@
+{
+  "name": "pnpjs-on-prem",
+  "version": "1.0.0",
+  "description": "Bundle PnPjs for on-premises SharePoints",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node_modules\\.bin\\browserify pnpjs-on-prem.ts -p [ tsify -p tsconfig.json ] -p tinyify > dist\\pnpjs-on-prem.js"
+  },
+  "author": "Heinrich Ulbricht",
+  "license": "ISC",
+  "dependencies": {
+    "@pnp/common": "^1.3.7",
+    "@pnp/logging": "^1.3.7",
+    "@pnp/odata": "^1.3.7",
+    "@pnp/sp": "^1.3.7",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "tinyify": "^2.5.2",
+    "tsify": "^4.0.1",
+    "typescript": "^3.7.2"
+  }
+}

@@ -1,0 +1,29 @@
+<!-- put this into a script editor web part and look at the console output -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<!-- this makes it compatible with IE11 -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Map%2CArray.prototype.%40%40iterator%2CPromise%2CPromise.prototype.finally"></script>
+
+<!-- put the path to pnpjs.js here -->
+<script src="/sites/PUTSITEPATHHERE/Style Library/js/pnpjs.js"></script>
+
+<script type="text/javascript">
+    // demo usage of pnpjs
+    window.contoso_pnpjs_sp.search({
+        Querytext: "contentclass:sts_site",
+        EnableInterleaving: true,
+        TrimDuplicates: false,
+        StartRow: 1,
+        RowLimit: 10,
+        RowsPerPage: 10,
+        SelectProperties: ["Title", "Description", "Path"]
+
+    }).then(function(r) {
+        console.log(r.ElapsedTime);
+        console.log(r.RowCount);
+        console.log(r.PrimarySearchResults);
+        // nagging demo output
+        alert(JSON.stringify(r.PrimarySearchResults));
+        return r;
+    });    
+</script>
