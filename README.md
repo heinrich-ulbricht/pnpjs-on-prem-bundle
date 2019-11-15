@@ -17,6 +17,8 @@ IE 11 needs polyfills for:
 * `Promise.prototype.finally`
 * `fetch` (the in-built one is lacking and needs to be replaced) ([polyfill](https://github.com/github/fetch))
 
+All but the last are provided by polyfill.io, have a look at _sample-script-editor-content.html_. The last one needs to be applied in code and is thus put into the bundle, see _pnpjs-on-prem.ts_. You don't have to do anything in addition - unless you start playing with even lower IE versions or new PnPjs APIs I didn't test.
+
 ## Tested Environment
 This has been tested in the following environment:
 * SharePoint Server 2013
