@@ -1,6 +1,9 @@
 # pnpjs-on-prem-bundle
 Use this project to bundle the latest [PnPjs](https://pnp.github.io/pnpjs/) into a single JavaScript file. Use that in an on-premises SharePoint environment where you have no SharePoint Framework.
 
+## Why?
+The now retired PnP-JS-Core used to provide ready-to-use JavaScript files. This is not the case anymore. And before I read the [documentation](https://pnp.github.io/pnpjs/documentation/gulp-commands/) about how one could get them back I sterted fiddling myself. This is the result.
+
 ## Use Cases
 * maintain light-weight JavaScript solutions in SharePoint on-premises (Script Editor, Content Editor, Add-ins, Master Page customizations etc.) while using a modern API wrapper
 * use PnPjs instead of handwoven REST calls to the SharePoint API
