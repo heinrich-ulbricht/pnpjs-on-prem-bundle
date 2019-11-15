@@ -8,6 +8,7 @@ The now retired PnP-JS-Core used to provide ready-to-use JavaScript files. This 
 * maintain light-weight JavaScript solutions in SharePoint on-premises (Script Editor, Content Editor, Add-ins, Master Page customizations etc.) while using a modern API wrapper
 * use PnPjs instead of handwoven REST calls to the SharePoint API
 * use the latest [PnPjs](https://pnp.github.io/pnpjs/) in SharePoint on-premises (note: **not** the deprecated [PnP-JS-Core](https://github.com/SharePoint/PnP-JS-Core))
+* implement additional functionality in TypeScript that will be part of the bundle
 
 ## How Does it Work?
 
