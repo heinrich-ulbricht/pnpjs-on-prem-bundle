@@ -6,6 +6,10 @@ Use this project to bundle the latest [PnPjs](https://pnp.github.io/pnpjs/) into
 * use PnPjs instead of handwoven REST calls to the SharePoint API
 * use the latest [PnPjs](https://pnp.github.io/pnpjs/) in SharePoint on-premises (note: **not** the deprecated [PnP-JS-Core](https://github.com/SharePoint/PnP-JS-Core))
 
+## How Does it Work?
+
+PnPjs comes as a collection of module to be used e.g. in a SharePoint Framework project. I bundle those together using [browserify](http://browserify.org/) to get a single JavaScript file that can easily be used in SharePoint on-prem.
+
 ## Challenges of Internet Explorer 11
 IE 11 needs polyfills for:
 * `Map`
