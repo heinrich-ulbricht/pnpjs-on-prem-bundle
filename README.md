@@ -24,8 +24,8 @@ This has been tested in the following environment:
 Lower versions of IE were not tested. Other PnPjs APIs were not tested, but the code should be easily adaptable.
 
 ## Minimal Path to Awesome
-* git clone
-* npm install
-* npm run bundle
+* `git clone`
+* `npm install`
+* `npm run bundle`
 
 Take _pnpjs-on-prem.js_ from the _dist_ folder. Look at _sample-script-editor-content.html_ to get started (shows how to load _require_ and _polyfill_ dependencies).
